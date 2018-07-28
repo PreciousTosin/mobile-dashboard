@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Dashboard</title>
+		<script src="https://use.fontawesome.com/d0e94fd6ca.js"></script>
+		<link rel="stylesheet" type="text/css" href="./dashboard.css">
+	</head>
+
+	<body>
+		<div class="dash--container">
+			<nav id="drawer" class="nav">
+				<div id="brand" class="nav--brand">
+					<a id="menu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+	      </div>
+	      <ul id="list" class="nav--list">
+	        <li class="nav--item"><a href="#">Dashboard</a></li>
+	      </ul>
+	    </nav>
+
+	    <div id="sidenav" class="side--nav">
+	    	<div class="menu--header"></div>
+	    	<div class="menu--body">
+	    		<div class="dashboard--tab">
+	    			<div class="icon--block">
+	    				<img src="./assets/images/side-menu/ic-dashboard.svg" alt="dashboard">
+	    			</div>
+	    			<div class="tab-text">Dashboard</div>
+	    		</div>
+	    		<div class="accounts--tab">
+	    			<div class="icon--block">
+	    				<img src="./assets/images/side-menu/ic-accounts.svg" alt="accounts">
+	    			</div>
+	    			<div class="tab-text">Accounts</div>
+	    		</div>
+	    		<div class="cards-tab">
+	    			<div class="icon--block">
+	    				<img src="./assets/images/side-menu/ic-cards.svg" alt="cards">
+	    			</div>
+	    			<div class="tab-text">Cards</div>
+	    		</div>
+	    		<div class="payments--tab">
+	    			<div class="icon--block">
+	    				<img src="./assets/images/side-menu/ic-payments.svg" alt="payments">
+	    			</div>
+	    			<div class="tab-text">Payments</div>
+	    		</div>
+	    		<div class="transfers--tab">
+	    			<div class="icon--block">
+	    				<img src="./assets/images/side-menu/ic-transfers.svg" alt="transfers">
+	    			</div>
+	    			<div class="tab-text">Transfers</div>
+	    		</div>
+	    		<div class="airtime--tab">
+	    			<div class="icon--block">
+	    				<img src="./assets/images/side-menu/ic-airtime.svg" alt="airtime">
+	    			</div>
+	    			<div class="tab-text">Airtime</div>
+	    		</div>
+	    		<div class="settings--tab">
+	    			<div class="icon--block">
+	    				<img src="./assets/images/side-menu/ic-settings.svg" alt="settings">
+	    			</div>
+	    			<div class="tab-text">Settings</div>
+	    		</div>
+	    	</div>
+	    </div>
+
+	   	<div class="content">
+	   		<div class="balance--container">
+	   			<div class="balance--text">Balance</div>
+	   			<div class="balance--amount">N 979153.36</div>
+	   			<div class="balance--points">16.500 SP</div>
+	   			<div class="dot--container">
+	   				<span class="dot opacity--100p"></span>
+						<span class="dot opacity--50p"></span>
+	   			</div>
+	   		</div>
+	   		<div class="banner--base">
+	   			<div>Latest Transactions</div>
+	   		</div>
+	   		<div class="transaction--body">
+	   			<div class="transaction">
+		   			<div class="transaction--loc">
+		   				<div class="origin">ATM Lagos</div>
+		   				<div class="date ftcol--lightgrey">Today</div>
+		   			</div>
+		   			<div class="transaction--info">
+		   				<div class="amount ftcol--red">- N 450.00</div>
+		   				<div class="purpose ftcol--lightgrey">Bank Withdraw</div>
+		   			</div>
+	   			</div>
+	   		
+	   		<div class="transaction bgcol--lightgrey">
+	   			<div class="transaction--loc">
+	   				<div class="origin">ATM Lagos</div>
+	   				<div class="date ftcol--lightgrey">Yesterday</div>
+	   			</div>
+	   			<div class="transaction--info">
+	   				<div class="amount ftcol--green">+ N 450.00</div>
+	   				<div class="purpose ftcol--lightgrey">Bank Withdraw</div>
+	   			</div>
+	   		</div>
+				
+				<div class="transaction">
+	   			<div class="transaction--loc">
+	   				<div class="origin">003 645 6548 65</div>
+	   				<div class="date ftcol--lightgrey">01/06/2015</div>
+	   			</div>
+	   			<div class="transaction--info">
+	   				<div class="amount ftcol--red">- 100 SP</div>
+	   				<div class="purpose ftcol--lightgrey">Airtime recharge</div>
+	   			</div>
+	   		</div>
+				
+				<div class="transaction bgcol--lightgrey">
+	   			<div class="transaction--loc">
+	   				<div class="origin">John Doe</div>
+	   				<div class="date ftcol--lightgrey">31/05/2015</div>
+	   			</div>
+	   			<div class="transaction--info">
+	   				<div class="amount ftcol--green">+ N 450.00</div>
+	   				<div class="purpose ftcol--lightgrey">Transfer</div>
+	   			</div>
+	   		</div>
+
+	   		<div class="transaction">
+	   			<div class="transaction--loc">
+	   				<div class="origin">ATM Lagos</div>
+	   				<div class="date ftcol--lightgrey">20/02/2015</div>
+	   			</div>
+	   			<div class="transaction--info">
+	   				<div class="amount ftcol--red">- N 200.00</div>
+	   				<div class="purpose ftcol--lightgrey">Bank Withdraw</div>
+	   			</div>
+	   		</div>
+
+	   		</div>
+	    </div>
+		</div>
+	
+		<script type="text/javascript">
+    	window.onload = function(e) {
+    		menu.addEventListener('click', function(e){
+    			console.log('ICON CLICKED!');
+    			sidenav.classList.toggle('open');
+    			list.classList.toggle('disable--list');
+    			drawer.classList.toggle('shift--brand');
+    			e.stopPropagation();
+    		});
+    	};
+    </script>
+	</body>
+</html>
