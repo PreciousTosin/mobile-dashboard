@@ -119,8 +119,33 @@ ul {
 } 
 
 .menu--header {
+  display: flex;
+  padding-top: 5rem;
+  padding-left: 1.5rem;
   height: 153px;
   background-image: url("assets/images/side-menu/menu-header-bg.png");
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.avatar img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.username {
+  display: flex;
+  align-items: center;
+  font-family: ProximaNovaSoft-Regular;
+  font-size: 18px;
+  color: #FFFFFF;
+  height: 50px;
+  line-height: 100%;
+  padding-left: 0.5rem;
 }
 
 .menu--body {
@@ -157,19 +182,6 @@ ul {
   padding-left: 0.5rem;
   padding-top: 0.2rem;
 }
-
-.dashboard--tab {
-
-}
-
-.accounts--tab {
-
-}
-
-.cards-tab {
-
-}
-
 
 
 /*  body  */
